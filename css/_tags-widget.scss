@@ -1,0 +1,36 @@
+.pm-footer-tags-list {
+	list-style:none;
+	padding:0px;
+	margin:0px;	
+}
+
+.pm-footer-tags-list li:before {
+	content:"";
+	margin:0;
+	padding:0px;
+}
+
+.pm-footer-tags-list li {
+	float:left;
+	margin-right:1px;	
+	margin-bottom:1px;
+}
+
+.pm-footer-tags-list li a {
+	padding:8px 18px;
+	background-color:rgba(0,0,0,.4);
+	color:$primaryColor;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	display:inline-block;
+	
+	@include borderRadiusAll(2px);	
+	@include transition(all, 0.3s);
+}
+
+.pm-footer-tags-list li a:hover {
+	background-color:$primaryColor;
+	color:white;	
+}

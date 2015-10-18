@@ -1,0 +1,40 @@
+/* Twitter widget */
+.pm-twitter-news {
+	clear:both;	
+}
+
+.pm-twitter-news ul li:before {
+    content: "\f099" !important;
+    font-size: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    top: 7px;
+	left: 10px;
+	color: $primaryColor;
+}
+
+.pm-twitter-news ul li {
+    padding: 0px 0px 11px 48px;
+	color:white;
+	word-wrap:break-word;
+	line-height: 22px;
+	position:relative;
+	font-weight:300;
+}
+
+.pm-twitter-news ul li a {
+    color: $primaryColor;
+	line-height:20px !important;
+	font-weight:300;
+}
+
+.pm-twitter-news ul {
+	list-style:none;
+	padding:0;
+	margin:0;	
+}   
+
+.tweet_container {
+	padding:2px 5px;
+}

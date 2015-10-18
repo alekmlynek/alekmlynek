@@ -1,0 +1,227 @@
+/* Posted comments */
+.pm-required-comments {
+	font-family:'Open sans';
+	font-size:13px;
+	color:#a7a7a7;	
+	text-transform:none;
+	font-weight:300;
+}
+
+.pm-comments-container {
+	width:auto;
+	height:auto;
+	overflow:hidden;	
+}
+
+.pm-comment-section-title {
+	color:#f1482b;
+	font-size:24px;	
+	font-family:'Cantata One';
+}
+
+.pm-single-blog-post-comments {
+	margin-bottom:30px;	
+}
+
+.pm-comment-box-container {
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	margin-top:30px;
+}
+
+.pm-comment-box-avatar-container {
+	width:auto;
+	height:auto;	
+	overflow:hidden;
+	padding:13px 13px 0;
+}
+
+.pm-comment-box-avatar-container p {
+	font-family:'Lato';
+	font-size:18px;
+	color:white;
+	
+}
+
+.pm-comment-avatar {
+	border:3px solid $primaryColor;
+    float: left;
+    margin-right: 8px;
+    overflow: hidden;
+	height:75px;
+	width:75px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	
+	@include borderRadiusAll(99px);
+}
+
+.pm-comment-author-divider {
+	width:100%;
+	height:1px;
+	background-color:$primaryColor;	
+}
+
+.pm-comment {
+    border-top: 1px solid $primaryColor;
+    margin: 10px 31px 0 106px;
+    padding: 20px 0;
+}
+
+.pm-comment-reply-btn {
+    float: left;
+    margin-bottom: 12px;
+    margin-left: 106px;
+}
+
+.pm-comment-author-list {
+    float: left;
+    list-style: outside none none;
+    margin-left: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 0;
+    width: 90%;
+}
+
+.pm-comment-author-list li {
+	float:left;	
+}
+
+.pm-comment-author-list li:before {
+	padding:0;
+	margin:0;
+	content:"";	
+}
+
+.pm-comment-author-list li:last-child {
+	float:right;	
+}
+
+.pm-comment-name {
+	font-family:'Lato';
+	font-size:18px;
+	color:$primaryColor;
+	text-transform:uppercase;	
+	font-weight:300;
+	margin-bottom:0px;
+}
+
+.pm-comment-date {
+	font-family:'Open sans';
+	font-size:14px !important;
+	font-weight:400;
+}
+
+.pm-comment p {
+	font-family:'Open sans';
+	font-size:14px !important;
+	color:white;
+}
+
+/* Posted comments end */
+
+/* Submit a comment form */
+.pm-submit-comment-form-container {
+	overflow:hidden;
+	width:auto;
+	height:auto;
+	margin-top:40px;
+}
+
+.pm-submit-comment-form-container h3 {
+	margin-bottom:5px;	
+}
+
+.pm-comment-required {
+	font-family:'Open Sans';
+	font-size:14px;
+	color:#F1482B;		
+}
+
+.pm-comment-form-textfield {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid $primaryColor;
+	background-color:transparent;
+	padding:10px 13px;
+	width:100%;
+	margin-bottom:20px;
+	font-family:'Lato';
+	text-transform:uppercase;
+	color:#666;
+	font-family:'Open sans';
+	
+	@include borderRadiusAll(0px);
+	@include transition(all, .5s);
+}
+
+.pm-comment-form-textfield:focus, .pm-comment-form-textarea:focus {
+	background-color:$primaryColor;
+	border-bottom:3px solid $primaryColor;
+	background-image:none;	
+	color:white;
+	text-transform:none;
+}
+
+.pm-comment-form-textarea {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid $primaryColor;
+	background-color:transparent;
+	padding:10px 13px;
+	width:100%;
+	margin-top:10px;
+	font-family:'Lato';
+	text-transform:uppercase;
+	min-height:150px;
+	color:#666;
+	
+	@include borderRadiusAll(0px);
+	@include transition(all, .5s);
+}
+
+.pm-comment-html-tags {
+	margin:20px 0;
+}
+
+.pm-comment-html-tags span {
+	font-family:'Open Sans';
+	font-weight:500;
+	color:$primaryColor;
+	font-size:13px;
+	text-transform:uppercase;
+}
+
+.pm-comment-html-tags p {
+	font-size:14px;
+	margin:0;	
+}
+
+.pm-comment-submit-btn {
+	min-width:100px;
+	padding:10px 25px;
+	border: 3px solid #e1e1e1;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	color: #c8c8c8 !important;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px 0;
+	display:inline-block;
+	background-color:transparent;
+	
+	@include transition(all, .4s);
+}
+
+.pm-comment-submit-btn:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+/* Submit a comment form end */

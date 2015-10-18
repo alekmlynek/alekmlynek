@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>MOXIE :: One-page Multi-purpose Template</title>
+    
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet">
+    
+    <!--[if gte IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+
+    <!-- main css -->
+    <link href="css/master.css" rel="stylesheet">
+    
+    <!-- mobile css -->
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- FontAwesome Support -->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/font-awesome.min.css" />
+    <!-- FontAwesome Support -->
+    
+    <!-- Superfish menu -->
+    <link rel="stylesheet" type="text/css" href="css/superfish/superfish.css" />
+    <!-- Superfish menu -->
+    
+    <!-- Theme Color selector -->
+    <link href="js/theme-color-selector/theme-color-selector.css" type="text/css" rel="stylesheet">
+    <!-- Theme Color selector -->
+    
+    <!-- Typicons -->
+    <link rel="stylesheet" type="text/css" href="css/typicons/typicons.min.css" />
+    <!-- Typicons -->
+    
+    <!-- Pulse Slider -->
+    <link rel="stylesheet" type="text/css" href="js/pulse/pm-slider.css" />
+    <!-- Pulse Slider -->    
+    
+    <!-- PrettyPhoto -->
+    <link rel="stylesheet" type="text/css" href="js/prettyphoto/css/prettyPhoto.css" />
+    <!-- PrettyPhoto -->
+    
+    <!-- jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.css" />
+    <!-- jQuery UI -->
+        
+    <!-- Development Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic%7COpen+Sans+Condensed:300,300italic,700%7CRaleway:400,200,300,100,600,500,700,800,900%7COswald:400,300,700%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7CRoboto+Condensed:400,300,300italic,400italic,700,700italic%7CRoboto+Slab:400,100,300,700%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Development Google Fonts -->
+    
+  </head>
+
+  <body>
+  
+  <div id="preloader">
+  	<div id="status">&nbsp;</div>
+  </div>
+    
+  <!-- Theme color selector -->
+  <div id="pm_theme_color_selector">
+        <a class="pm_theme_color_selector_btn"><i class="typcn typcn-cog"></i></a>
+        <p class="pm_theme_color_selector_title">Style Sampler</p>
+
+        <div class="pm_theme_color_selector_container">
+        	<p>Layout Style</p>
+        	<select name="pm_theme_color_selector_mode" id="pm_theme_color_selector_mode">
+        	  <option value="pm-full-mode" selected>Fullscreen</option>
+              <option value="pm-boxed-mode">Boxed Mode</option>
+        	</select>
+        </div>
+        <div class="pm_theme_color_selector_container">
+        	<p>Patterns for Boxed Mode</p>
+        	<ul class="pm_theme_img_selector" id="pm_theme_pattern_selector">
+                <li><a href="#" id="pattern1-lg"><img src="img/boxed-patterns/pattern1.png" alt="pattern1"></a></li>
+                <li><a href="#" id="pattern2-lg"><img src="img/boxed-patterns/pattern2.png" alt="pattern2"></a></li>
+                <li><a href="#" id="pattern3-lg"><img src="img/boxed-patterns/pattern3.png" alt="pattern3"></a></li>
+                <li><a href="#" id="pattern4"><img src="img/boxed-patterns/pattern4.png" alt="pattern4"></a></li>
+                <li><a href="#" id="pattern5"><img src="img/boxed-patterns/pattern5.png" alt="pattern5"></a></li>
+                <li><a href="#" id="pattern6"><img src="img/boxed-patterns/pattern6.png" alt="pattern6"></a></li>
+            </ul>
+        </div>
+        
+        <div class="pm_theme_color_selector_container">
+        	<p>Backgrounds for Boxed Mode</p>
+        	<ul class="pm_theme_img_selector" id="pm_theme_background_selector">
+                <li><a href="#" id="1a"><img src="img/boxed-bgs/1.jpg" alt="bg1"></a></li>
+                <li><a href="#" id="2a"><img src="img/boxed-bgs/2.jpg" alt="bg2"></a></li>
+                <li><a href="#" id="3a"><img src="img/boxed-bgs/3.jpg" alt="bg3"></a></li>
+                <li><a href="#" id="4a"><img src="img/boxed-bgs/4.jpg" alt="bg4"></a></li>
+                <li><a href="#" id="5a"><img src="img/boxed-bgs/5.jpg" alt="bg5"></a></li>
+            </ul>
+        </div>
+   
+    </div>
+    <!-- Theme color selector -->
+    
+    <!-- Floating Menu container -->
+    <div class="pm-float-menu-container post" id="pm-float-menu-container">
+    	
+        <ul class="pm-header-social-icons micro">
+            <li><a class="fa fa-twitter" href="#"></a></li>
+            <li><a class="fa fa-facebook" href="#"></a></li>
+            <li><a class="fa fa-linkedin" href="#"></a></li>
+        </ul>
+        <a class="pm-header-menu-btn blog" href="blog.html"><i class="fa fa-bars"></i></a>
+        <a class="pm-header-menu-btn micro" href="index.html"><i class="fa fa-home"></i></a>
+        
+        
+    </div>
+    <!-- Floating Menu container end -->
+
+	<div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
+                                    
+        <!-- SUB-HEADER AREA -->
+        <div class="pm-subheader-container single-post pm-parallax-panel" data-stellar-background-ratio="0.5">
+        
+        	<!-- Header area -->
+            <header>
+            
+                <ul class="pm-header-social-icons">
+                    <li><a href="#" class="fa fa-twitter"></a> <p>233</p></li>
+                    <li><a href="#" class="fa fa-facebook"></a> <p>548</p></li>
+                    <li><a href="#" class="fa fa-linkedin"></a> <p>365</p></li>
+                </ul>
+                    
+                <div class="pm-header-menu-btn-container">
+                    <a href="index.html" class="pm-header-menu-btn"><i class="fa fa-home"></i></a> &nbsp;<span class="pm-header-menu-btn">/</span>&nbsp; <a class="pm-header-menu-btn" href="blog.html">Blog</a>
+                </div>
+            
+                <div class="pm-header-logo">
+                    <a href="index.html"><img src="img/moxie.png" alt="MOXIE - Multi-purpose template"/></a> 
+                </div>
+                        
+            </header>
+            <!-- /Header area end -->
+        	
+            <div class="pm-single-news-post-title">
+            	
+                <h2>
+                    <span class="pm-single-news-post-title-divider"></span>
+                        my latest adventures across north america
+                        <span class="pm-single-news-post-title-decription">july 21, 2015</span>
+                    <span class="pm-single-news-post-title-divider"></span>
+                </h2>
+                
+            </div>
+            
+            <ul class="pm-subheader-post-navigation">
+            	<li>
+                	<a class="pm-post-nav-btn" href="#">
+                        <div class="pm-post-nav-btn-faceflip-top">
+                            <p><i class="fa fa-arrow-circle-o-left"></i> Prev. Post</p>
+                        </div>
+                        <div class="pm-post-nav-btn-faceflip-bottom">
+                            <p>relaxing at the beautiful...</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                	<a class="pm-post-nav-btn" href="#">
+                        <div class="pm-post-nav-btn-faceflip-top">
+                            <p>Next Post <i class="fa fa-arrow-circle-o-right"></i></p>
+                        </div>
+                        <div class="pm-post-nav-btn-faceflip-bottom">
+                            <p>finding solace in the realm ...</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="pm-subheader-post-navigation-mobile">
+            	<li>
+                	<a href="services.html">
+                        <i class="fa fa-arrow-circle-o-left"></i> Prev. Post
+                    </a>
+                </li>
+                <li>
+                	<a href="services.html">
+                        Next Post <i class="fa fa-arrow-circle-o-right"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+ 		<!-- SUB-HEADER end -->
+        
+        <!-- BODY CONTENT starts here -->
+       
+        
+       	<!-- PANEL 1 -->
+        <div class="container pm-containerPadding-top-110 pm-containerPadding-bottom-80 container-scroll" id="article">
+        
+        	<div class="row">
+            	
+                <!-- Blog post area -->
+                <div class="col-lg-12">
+                	
+                    <!-- Blog post -->
+                    <article class="pm-column-spacing news-post">
+                    
+                    	<div class="pm-news-post-container single-post">
+                        	
+                            <div class="pm-news-post-img-container single-post">
+                            
+                            	<div class="pm-news-post-image-single"><img src="img/news/placeholders/1.jpg" alt="thumbnail" /></div>
+                            	
+                                <a href="#" class="pm-news-post-category">travel</a>
+                                
+                                <div class="pm-news-post-like-box-container">
+                                    <a class="pm-news-post-like-box fa fa-heart" href="#"></a>
+                                    <span>1</span>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="pm-news-post-title-container">
+                                <h2 class="pm-news-post-title">my latest adventures across north america</h2>
+                                <p class="pm-news-post-date"><i class="fa fa-clock-o"></i> july 21, 2015 &nbsp; <i class="fa fa-user"></i> admin</p>
+                            </div>
+                            
+                            <div class="pm-news-post-divider single-post"></div>
+                            
+                            <div class="pm-news-post-content">
+                            
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue quam, bibendum mollis nisl tristique, congue ullamcorper velit. Aenean ut turpis laoreet ante imperdiet tincidunt id in lorem. Mauris sit amet libero vitae neque efficitur sollicitudin. Integer vel magna scelerisque, luctus dolor et, dignissim massa. Aenean id maximus nunc. Maecenas gravida neque eu mollis finibus. Mauris et nibh nisl. Maecenas ut turpis vehicula dolor ullamcorper tempor a ut nunc. </p>
+                                
+                                <p>Vestibulum posuere arcu at porttitor cursus. Vivamus in lacus nec elit eleifend vulputate. In dapibus vehicula leo, id sollicitudin lorem laoreet eget. Vivamus id nisi at urna maximus accumsan. Morbi vehicula nisl quis velit posuere, tempus ultricies nisl sagittis. Donec eu sodales elit. Pellentesque eu fringilla lectus, eget mollis sapien. Quisque ac elit nec ante faucibus maximus. Donec vel elit porttitor, lacinia risus nec, faucibus dui. Pellentesque maximus nibh nec est mattis lacinia. Aenean consectetur metus sed tellus semper consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vulputate dolor sit amet ipsum fermentum, id eleifend felis tempor. Donec in pretium tortor, ac rhoncus lorem. Praesent maximus vitae sem non vestibulum. </p>
+                                
+                                <p>Donec iaculis vulputate sapien, vel dignissim neque mattis non. Donec sagittis, tellus in sodales facilisis, velit ipsum fermentum lectus, vitae euismod neque eros ut nisl. Etiam tincidunt varius lorem vitae viverra. Mauris sed vehicula ante, vitae varius lectus. Quisque nec dolor eu libero posuere gravida. Etiam rhoncus ullamcorper tortor vitae commodo. Maecenas vulputate, elit eget porttitor pretium, justo quam varius arcu, a condimentum neque enim et neque. Vestibulum vel scelerisque nisi. Donec ut leo eros. Suspendisse nec ultricies nulla. Praesent non vehicula elit. Nullam luctus quam non fermentum feugiat. Vestibulum lacinia porta mollis. </p>
+                                <p>Nulla facilisi. Integer nisi elit, suscipit vitae accumsan dapibus, ultrices at ante. Etiam id tincidunt sapien. Proin suscipit ultrices nulla. Pellentesque semper, sem et hendrerit elementum, leo sem gravida quam, convallis placerat felis mauris non dolor. Integer sed neque nulla. Nullam nec ligula sit amet lectus fermentum lobortis at eget erat. Nunc blandit malesuada volutpat. Cras non metus tortor. Ut a lectus mattis, scelerisque mi molestie, hendrerit nisi. Aenean efficitur ante sed euismod suscipit. </p>
+                            
+                            </div>
+                            
+                            <div class="pm-news-post-divider margin-top-20 single-post"></div>
+                            
+                            <div class="pm-single-post-meta">
+                            	
+                                <ul class="pm-single-post-tags-list">
+                                	<li><i class="fa fa-tags"></i></li>
+                                    <li><a href="#">traveling,</a></li>
+                                    <li><a href="#">nature,</a></li>
+                                    <li><a href="#">caves,</a></li>
+                                    <li><a href="#">north america</a></li>
+                                </ul>
+                                
+                                <ul class="pm-single-post-social-icons">                                
+                                    <li title="Twitter" class="pm_tip_static_bottom"><a class="fa fa-twitter" href="#"></a></li>
+                                    <li title="Facebook" class="pm_tip_static_bottom"><a class="fa fa-facebook" href="#"></a></li>
+                                    <li title="Google Plus" class="pm_tip_static_bottom"><a class="fa fa-google-plus" href="#"></a></li>
+                                    <li title="Linkedin" class="pm_tip_static_bottom"><a class="fa fa-linkedin" href="#"></a></li>
+                                    <li title="Reddit" class="pm_tip_static_bottom"><a class="fa fa-reddit" href="#"></a></li>
+                                </ul>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </article>
+                    <!-- Blog post end -->
+                    
+                    
+                </div>
+                <!-- Blog post area end -->
+                
+                
+                
+            </div><!-- /.row --> 
+        
+        </div>
+        <!-- PANEL 1 end -->
+        
+        
+        <!-- PANEL 2 -->
+        <div class="pm-column-container pm-containerPadding-bottom-50 pm-parallax-panel container-scroll" id="author-profile" data-stellar-background-ratio="0.5">
+        
+        	<div class="container pm-containerPadding80">
+            	<div class="row">
+                	<div class="col-lg-12">
+                    	
+                        <h4 class="pm-author-column-title">About the Author</h4>
+                        
+                        <div class="row pm-containerPadding-top-30">
+                        	
+                            <div class="col-lg-3 col-md-12 col-sm-12">
+                            	
+                                <div class="pm-author-bio-img-bg"><img src="img/news-post/placeholders/avatar.jpg" alt="avatar" /></div>
+                                
+                            </div>
+                            
+                            <div class="col-lg-9 col-md-12 col-sm-12 pm-author-profile-column">
+                            	<p class="pm-author-name">john daleson</p>
+                                <p class="pm-author-title">life explorer, adventurer & tech geek</p>
+                                <div class="pm-author-divider"></div>
+                                <p class="pm-author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla erat nec tellus consectetur sodales. Vivamus quis est eget velit scelerisque condimentum sed non lorem. Morbi commodo id magna nec semper. Nullam pulvinar erat nisl, ac laoreet orci tempus iaculis. Vivamus nec tortor velit. Praesent a tortor nulla. Nullam pulvinar erat nisl, ac laoreet orci tempus iaculis.</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- PANEL 2 end -->
+        
+        <!-- PANEL 3 -->
+        <div class="container pm-containerPadding-top-100 pm-containerPadding-bottom-70 container-scroll" id="related-posts">
+        	<div class="row">
+            	<div class="col-lg-12">
+                
+                	<h4 class="pm-primary">Related Posts</h4>
+                    
+                    
+                    <div class="pm-single-blog-post-related-posts">
+                    
+                    	<ul class="pm-related-blog-posts">
+                            <!-- Post -->
+                            <li>
+                                <a href="#" class="pm-related-post-btn fa fa-arrow-circle-o-right"></a>
+                                <div class="pm-related-blog-post-thumb"><img src="img/news/placeholders/post-thumb1.jpg" alt="thumbnail" /></div>
+                                <div class="pm-related-blog-post-details">
+                                    <a href="news-post.html">feeling the heat across the plains of sicily &amp; sardina</a>
+                                    <p class="pm-date"><i class="fa fa-clock-o"></i> july 21, 2015 - admin</p>
+                                </div>
+                            </li>
+                            <!-- Post end -->
+                            <!-- Post -->
+                            <li>
+                                <a href="#" class="pm-related-post-btn fa fa-arrow-circle-o-right"></a>
+                                <div class="pm-related-blog-post-thumb"><img src="img/news/placeholders/post-thumb1.jpg" alt="thumbnail" /></div>
+                                <div class="pm-related-blog-post-details">
+                                    <a href="news-post.html">relaxing at the beautiful rio grand resort in the bahamas</a>
+                                    <p class="pm-date"><i class="fa fa-clock-o"></i> Feb 18, 2015 - admin</p>
+                                </div>
+                            </li>
+                            <!-- Post end -->
+                            <!-- Post -->
+                            <li>
+                                <a href="#" class="pm-related-post-btn fa fa-arrow-circle-o-right"></a>
+                                <div class="pm-related-blog-post-thumb"><img src="img/news/placeholders/post-thumb1.jpg" alt="thumbnail" /></div>
+                                <div class="pm-related-blog-post-details">
+                                    <a href="news-post.html">finding solace in the realm of god</a>
+                                    <p class="pm-date"><i class="fa fa-clock-o"></i> Jan 21, 2015 - admin</p>
+                                </div>
+                            </li>
+                            <!-- Post end -->
+                        </ul>
+                    
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- PANEL 3 end-->
+        
+        <!-- PANEL 4 -->
+        <div class="pm-column-container pm-containerPadding100 pm-parallax-panel container-scroll" id="comments" data-stellar-background-ratio="0.5">
+        
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-lg-12">
+                    	
+                        <h4 class="pm-comments-response-title">1 response to "my latest adventures across north america"</h4>
+                        
+                        <!-- Comments --> 
+                        <div class="pm-comments-container">
+                            
+                            <!-- Comment -->
+                            <div class="pm-comment-box-container">
+                                                        
+                                <div class="pm-comment-box-avatar-container">
+                                    <div class="pm-comment-avatar"><img src="img/news/placeholders/01_avatar.jpg" alt="thumbnail" /></div>
+                                    <ul class="pm-comment-author-list">
+                                        <li><p class="pm-comment-name">Nick Doe</p></li>
+                                        <li><p class="pm-comment-date">September 6, 2014</p></li>
+                                    </ul>
+                                                                        
+                                </div>
+                                
+                                <div class="pm-comment">
+                                    <p>Sed vitae arcu quis dolor pulvinar rhoncus id eget velit. Vivamus lectus dolor, consectetur quis magna ac, viverra mollis orci. Mauris eget fermentum erat. Maecenas mattis, dui quis mollis commodo, justo elit aliquam nulla, sit amet iaculis nisl velit vitae nibh. Aliquam erat volutpat. Sed scelerisque mattis euismod. Curabitur interdum lectus sit amet nisl tempus, sit amet laoreet.</p>
+                                </div>
+                                
+                                <div class="pm-comment-reply-btn">
+                                    <a href="#" class="pm-square-btn comment-reply">reply</a>
+                                </div>
+                                
+                            </div>
+                            <!-- Comment end -->
+                        
+                        </div>
+                        <!-- Comments end --> 
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- PANEL 4 end -->
+        
+        
+        <!-- PANEL 5 -->
+        <div class="container pm-containerPadding-top-100 pm-containerPadding-bottom-80 container-scroll" id="submit-comment">
+        	<div class="row">
+            	<div class="col-lg-12">
+                    
+                    <h4 class="pm-primary">Submit a Comment</h4>
+                    
+                    <p class="pm-required-comments">Your email address will not be published. Required fields are marked *</p>
+                    
+                    <div class="row pm-containerPadding-top-20">
+                        
+                        <form name="pm-submit-comment-form" action="post">
+                        
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <input name="pm-comment-name" type="text" placeholder="Name *" class="pm-comment-form-textfield">
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <input name="pm-comment-email" type="text" placeholder="Email *" class="pm-comment-form-textfield">
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <input name="pm-comment-website" type="text" placeholder="Website" class="pm-comment-form-textfield">
+                            </div>
+                            
+                            <div class="col-lg-12 pm-clear-element">
+                                <textarea name="pm-comment-message" cols="20" rows="10" placeholder="Comment" class="pm-comment-form-textarea"></textarea>
+                            </div>
+                            
+                            <div class="col-lg-12 pm-clear-element">
+                                <div class="pm-comment-html-tags">
+                                    <span>You may use these HTML tags and attributes: </span>
+        <p>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </p>
+                                </div>
+                                
+                                <input name="pm-comment-submit-btn" class="pm-rounded-btn no-border" type="button" value="Submit Comment">
+                                
+                            </div>
+                            
+                        </form>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- PANEL 5 end-->
+                
+        <!-- BODY CONTENT end -->
+        
+        
+        <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
+        	
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                    
+                    	<img src="img/moxie.png" width="120" height="62" alt=""/>
+
+                        <br><br>
+                        <p>Moxie is a one-page multi-purpose template designed by Pulsar Media.
+                        <p>Moxie is perfect for anyone and everyone including photographers, designers, artists, musicians, florists, poets. travellers etc.</p>
+                        <p>Moxie was designed with multi-purpose in mind to suit pretty much any niche market.</p>
+                        
+                    </div>
+                    
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                                           		
+                       <h6 class="pm-fat-footer-title"> <span>Popular</span> Tags <span class="pm-fat-footer-title-border"></span></h6>
+                       
+                       <ul class="pm-footer-tags-list">
+                       		<li><a href="#">Design</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Art</a></li>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">Atmosphere</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Nuture</a></li>
+                            <li><a href="#">Photography</a></li>
+                       </ul>
+                        
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                    
+                        <h6 class="pm-fat-footer-title"> <span>Latest</span> Photos <span class="pm-fat-footer-title-border"></span></h6>
+                        
+                        <div class="flickr_badge_wrapper clearfix">
+                        
+                        	<div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="flickr_badge_image">
+                                <a href="img/flickr/placeholders/1a.jpg" data-rel="prettyPhoto[gallery-widget]">
+                                    <span></span>
+                                    <i class="fa fa-expand"></i>
+                                    <img width="63" height="63" title="" alt="A photo on Flickr" src="img/flickr/placeholders/1.jpg">
+                                </a>
+                            </div>
+                        
+                        </div><!-- /.flickr_badge_wrapper -->
+                        
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                    
+                        <h6 class="pm-fat-footer-title"> <span>Latest</span> Tweets <span class="pm-fat-footer-title-border"></span></h6>
+                        
+                        <div id="pm-twitter-news" class="pm-twitter-news"></div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-12 pm-clear-element">
+                    	
+                        <div class="pm-footer-newsletter-divider"></div>
+                        
+                        <div class="pm-home-newsletter-form-container">
+                        
+                        	<p class="pm-home-newsletter-title">Newsletter Registration</p>
+                        
+                            <form novalidate target="_blank" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="//pulsarmedia.us4.list-manage.com/subscribe/post?u=2aa9334fc1bc18c8d05500b41&amp;id=dbcb577c4d">  
+                                <input type="text" placeholder="First Name" id="MERGE1" name="MERGE1" class="pm-home-newsletter-field">
+                                <input type="text" placeholder="Email Address" id="MERGE0" name="MERGE0" class="pm-home-newsletter-field">
+                                <!--<input type="submit" class="pm-newsletter-submit-btn" value="subscribe &plus;" id="mc-embedded-subscribe" name="subscribe">-->
+                            </form>
+                            <a href="#" class="pm-home-newsletter-btn" id="pm-home-newsletter-btn"><i class="fa fa-mail-forward"></i></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-12 pm-clear-element">
+                    
+                    	<div class="pm-footer-social-icons-container">
+                            
+                            <ul class="pm-social-navigation">
+                            	<li class="pm_tip_static_top" title="Twitter" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-twitter"></a></li>
+                                <li class="pm_tip_static_top" title="Facebook" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-facebook"></a></li>
+                                <li class="pm_tip_static_top" title="Google Plus" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-google-plus"></a></li>
+                                <li class="pm_tip_static_top" title="Linkedin" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-linkedin"></a></li>
+                                <li class="pm_tip_static_top" title="Pinterest" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-pinterest"></a></li>
+                                <li class="pm_tip_static_top" title="Vine" data-tip-offset-x="8" data-tip-offset-y="6"><a href="#" class="fa fa-vine"></a></li>
+                            </ul>
+                            
+                        </div>
+                        
+                        <div class="pm-footer-copyright">
+                        	<p>&copy; 2015 MOXIE. Developed by Pulsar Media.</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>	
+            </div>
+            
+        </div>
+        
+        <footer>
+            
+            <div class="pm-footer-scroll-up">
+        	
+              <div class="pm-footer-scroll-up-btn-container">
+                
+                  <div class="pm-footer-scroll-up-btn-shadow">
+                    <a href="#services" id="back-top-last" class="pm-footer-scroll-up-btn"><img src="img/arrow-up.png" width="21" height="29" alt=""/></a>
+                  </div>
+                
+                </div>
+                
+            </div>
+
+                
+        </footer>
+                
+       
+    
+    </div><!-- /pm_layout-wrapper -->
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="bootstrap3/js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.tooltip.js"></script>
+    <script src="js/stellar/jquery.stellar.js"></script>
+    <script src="js/theme-color-selector/theme-color-selector.js"></script>
+    <script src="js/pulse/jquery.PMSlider.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/twitterfetch/twitterfetch.js"></script>
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+    
+    
+    <p id="back-top" class="back-top-container visible-lg visible-md visible-sm">
+    	<a href="#" class="fa fa-chevron-up" id="back-top-scroll-up"></a>
+        <span id="back-top-status">99%</span>
+        <a href="#" class="fa fa-chevron-down" id="back-top-scroll-down"></a>
+    </p>
+    
+  </body>
+</html>

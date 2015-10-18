@@ -1,0 +1,344 @@
+/* Rounded button */
+.pm-rounded-btn {
+	width:auto;
+	height:auto;	
+	display:inline;
+	background-color:$primaryColor;
+	min-width:100px;
+	display:inline-block;
+	padding:14px 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	color:white !important;
+	margin:15px 0px;
+	text-align:center;
+	border:2px solid white;
+	
+	@include borderRadiusAll(4px);
+	@include transition(all, 0.4s);
+
+}
+
+.pm-rounded-btn:hover {
+	color:white !important;
+	background-color:#999;
+}
+
+.pm-rounded-btn.no-border {
+	border:none !important;
+}
+.pm-rounded-btn i {
+	font-size:10px !important;	
+}
+
+.pm-rounded-btn.submit {
+	border:0px solid white;	
+	margin-top:10px;
+}
+
+.pm-rounded-btn.tag {
+	margin:1px;	
+}
+
+.pm-rounded-btn.expand {
+	padding:7px 0px !important;
+	min-width:40px !important;
+}
+
+.pm-rounded-btn.small {
+	padding:7px 17px;	
+}
+
+.pm-rounded-btn.no-border {
+	border:0px solid white;
+}
+
+
+.pm-rounded-btn.pm-primary {
+	background-color:#EF5438;
+}
+
+.pm-rounded-btn.pm-secondary {
+	background-color:#44619d;
+}
+
+.pm-rounded-btn.transparent:hover {
+	color:white;
+	background-color:#333;
+}
+
+.pm-rounded-btn.transparent a {
+	background-color:transparent;
+	color:white;	
+	border:3px solid white;
+}
+
+.pm-rounded-btn.transparent a:hover {
+	color:white;
+	border:3px solid #DBC164;
+	background-color:#DBC164;
+}
+
+.pm-rounded-btn a i {
+	font-family:'FontAwesome';
+	margin-left:5px;	
+}
+
+.pm-rounded-btn.animated a {
+	padding-left:22px;	
+}
+
+.pm-rounded-btn.animated i {
+	opacity:0;
+	margin-left:-3px;	
+	
+	transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+
+.pm-rounded-btn.animated:hover i {
+	margin-left:7px;	
+	opacity:1;
+}
+/* Rounded button end */
+
+/* Square btn */
+.pm-square-btn {
+	min-width:100px;
+	padding:10px 25px;
+	border:3px solid white;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	color:white !important;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px 0;
+	display:inline-block;
+	
+	@include transition(all, .4s);	
+}
+
+.pm-square-btn:hover {
+	background-color:$primaryColor;
+	color:white !important;	
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.comment-reply:hover {
+	background-color:white;
+	color:black !important;	
+	border:3px solid white;
+}
+
+.pm-square-btn.appointment-form {
+	background-color: $primaryColor !important;
+	border:3px solid $primaryColor !important;
+    display: table;
+    margin: 0px auto 10px;
+}
+
+.pm-square-btn.appointment-form:hover {
+	background-color: white !important;
+	border:3px solid white !important;
+	color:black !important;
+}
+
+.pm-icon-btn {
+	display:block;
+	padding:24px;
+	background-color:$secondaryColor;
+	font-size:40px !important;
+	color:white;
+	width:90px;
+	height:90px;
+	
+	@include borderRadiusAll(99px);
+}
+
+.pm-icon-btn.typcn:before {
+	margin-left:-4px !important;	
+}
+
+.pm-icon-btn.typcn {
+	line-height:30px !important;	
+	font-size:50px !important;
+	display:inline-block !important;
+}
+
+.pm-icon-btn:hover {
+	color:white;
+	background-color:$primaryColor;	
+}
+
+/* Btn extensions */
+.pm-square-btn.event {
+	border:3px solid #e1e1e1;
+	color:#c8c8c8 !important;
+}
+
+.pm-square-btn.event:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.news-post {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: block;
+    margin: 20px auto 40px;
+    width: 150px;
+}
+
+.pm-square-btn.news-post:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.tag {
+	border: 0px solid #e1e1e1;
+    color: white !important;
+    display: inline;
+    line-height: 35px;
+    margin-bottom: 0px;
+    margin-right: 1px;
+    padding: 7px 15px;
+	background-color:$primaryColor;
+	
+	@include borderRadiusAll(2px);
+}
+
+.pm-square-btn.tag:hover {
+	background-color:$secondaryColor;
+	color:white !important;
+	border:0px solid $primaryColor;
+}
+
+.pm-square-btn.class-widget {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: inline;
+    line-height: 48px;
+}
+
+.pm-square-btn.class-widget:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.store-btn {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: table;
+    line-height: 48px;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    text-align: center;
+}
+
+.pm-square-btn.store-btn:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.pm-cart-remove {
+    color: white !important;
+    display: table;
+    line-height: 48px;
+    margin: 5px auto 0 !important;
+    padding: 0 20px !important;
+    text-align: center;
+	border:none !important;
+	background-color:$primaryColor;
+	font-family:'Open sans' !important;
+}
+
+.pm-square-btn.pm-cart-remove:hover {
+	background-color:#999;
+	color:white !important;
+}
+
+.pm-sidebar-newsletter-btn {
+	font-family:'Open sans';
+	font-size:14px;
+	text-transform:uppercase;
+	color:#707070;		
+	font-weight:bold;
+	margin-top:10px;
+	display:block;
+	text-align:center;
+}
+
+/* Post navigation btns */
+.pm-post-nav-btn {
+    display: inline-block;
+	margin-top:50px;
+	width:auto;
+	text-align: center;
+	height:40px;
+
+	-webkit-transition: -webkit-transform .33s;
+	transition: transform .33s; /* Animate the transform properties */
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d; /* <-NB */
+	
+}
+
+.pm-post-nav-btn p {
+	text-decoration:none;
+	font-family:'Open sans';
+	font-weight:300;
+	font-size:14px;
+	color:white;	
+	text-transform:uppercase;
+	font-weight:700;
+	margin:0px;
+	line-height:0px;
+}
+
+.pm-post-nav-btn p i {
+	font-family:'FontAwesome';
+	line-height:inherit;	
+}
+
+/* The two faces of the cube */
+.pm-post-nav-btn-faceflip-top, .pm-post-nav-btn-faceflip-bottom {
+	background:transparent;
+	border: 3px solid white;
+	height:40px;
+	padding:20px 10px;
+}
+
+/* Position the faces */
+.pm-post-nav-btn-faceflip-top {
+	transform: translateZ(22px);
+	-webkit-transform: translateZ(22px);
+	-o-transform:translateZ(22px);
+	-moz-transform:translateZ(22px);
+	-ms-transform: none;
+}
+
+.pm-post-nav-btn-faceflip-bottom {
+	transform: rotateX(-90deg) translateZ(-22px);
+	-webkit-transform: rotateX(-90deg) translateZ(-22px);
+	-moz-transform: rotateX(-90deg) translateZ(-22px);
+	-ms-transform: none;
+}
+
+/* Rotate the cube */
+.pm-post-nav-btn:hover {
+	transform: rotateX(90deg); /* Text bleed at 90º */
+	-webkit-transform: rotateX(90deg);
+	
+	-ms-transform: none;
+}
